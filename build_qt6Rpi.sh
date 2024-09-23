@@ -5,7 +5,6 @@
 
 set -exuo pipefail
 
-BUILD_TARGET=/build/qt6_host
 SRC=/src
 QT_BRANCH="6.7.2"
 DEBIAN_VERSION=$(lsb_release -cs)
@@ -112,7 +111,7 @@ function build_qtpi () {
     popd
 
     pushd "$BUILD_TARGET_PI"
-    sha256sum "qt5-$QT_BRANCH-$DEBIAN_VERSION-$1.tar.gz" > "qt5-$QT_BRANCH-$DEBIAN_VERSION-$1.tar.gz.sha256"
+    sha256sum "qt$QT_BRANCH-$DEBIAN_VERSION-$1.tar.gz" > "qt5-$QT_BRANCH-$DEBIAN_VERSION-$1.tar.gz.sha256"
     popd
 }
 
