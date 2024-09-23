@@ -107,7 +107,7 @@ function build_qtpi () {
     popd
 
     pushd "$SRC_DIR"
-    tar cfz "$BUILD_TARGET_PI/qt5-$QT_BRANCH-$DEBIAN_VERSION-$1.tar.gz" qt6pi
+    tar cfz "$BUILD_TARGET_PI/qt5-$QT_BRANCH-$DEBIAN_VERSION.tar.gz" qt6pi
     popd
 
     pushd "$BUILD_TARGET_PI"
