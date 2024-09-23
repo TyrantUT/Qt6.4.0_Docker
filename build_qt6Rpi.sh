@@ -111,7 +111,7 @@ function build_qtpi () {
     popd
 
     pushd "$BUILD_TARGET_PI"
-    sha256sum "qt$QT_BRANCH-$DEBIAN_VERSION-$1.tar.gz" > "qt5-$QT_BRANCH-$DEBIAN_VERSION-$1.tar.gz.sha256"
+    sha256sum "qt$QT_BRANCH-$DEBIAN_VERSION-$1.tar.gz" > "qt5-$QT_BRANCH-$DEBIAN_VERSION.tar.gz.sha256"
     popd
 }
 
